@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>cool website</title>
+        <link href="styles.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="wrap">
+            <h1 id="welcome-el">Welcome!</h1>
+        </div>
+        <div class="wrap">
+            <h1>People entered!</h1>
+            <h2 id="count">0</h2>
+        </div>
+        <div class="wrap">
+            <button class="btn" id="increment-btn" onclick="increment()">Increment</button>
+            <button class="btn" id="decrement-btn" onclick="decrement()">Decrement</button>
+            <button class="btn" id="save-btn" onclick="save()">Save</button>
+        </div>
+        <div class="wrap">
+            <h1>Previous entries:</h1>
+            <p id="entries-el">-</p>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
