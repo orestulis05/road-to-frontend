@@ -2,7 +2,7 @@ const countText = document.getElementById("count")
 const welcomeEl = document.getElementById("welcome-el")
 const previousEntriesEl = document.getElementById("entries-el")
 
-const personName = "Orestas"
+const personName = "traveler"
 welcomeEl.textContent = "Welcome, " + personName + "!"
 
 let count = 0
