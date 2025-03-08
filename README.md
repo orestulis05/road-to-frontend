@@ -1,5 +1,6 @@
 # Road to Frontend Developer
 Projects that are done from [the roadmap.sh frontend roadmap](https://roadmap.sh/frontend/projects) in order to learn frontend development.
 
-## Projects
-- [Single-Page HTML CV Project](https://roadmap.sh/projects/single-page-cv)
+## Projects from The Roadmap
+- [Single-Page HTML CV](https://roadmap.sh/projects/single-page-cv)
+- [Simple HTML Website](https://roadmap.sh/projects/basic-html-website)
