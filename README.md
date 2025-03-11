@@ -5,3 +5,4 @@ Projects that are done from [the roadmap.sh frontend roadmap](https://roadmap.sh
 - [Single-Page HTML CV](https://roadmap.sh/projects/single-page-cv)
 - [Simple HTML Website](https://roadmap.sh/projects/basic-html-website)
 - [Personal Portfolio](https://roadmap.sh/projects/portfolio-website)
+- [Changelog Component](https://roadmap.sh/projects/changelog-component)
