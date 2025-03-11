@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+body{
+    margin: 0;
+    padding: 2em;
+    background-color: rgb(160, 160, 160);
+    font-family: 'Outfit', sans-serif;
+}
+
+.changelog-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 3px 3px 6px 3px gray;
+    padding: 1em;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 6px;
+}
+
+.subheading{
+    text-align: center;
+    margin: 0 0 24px 0;
+    color: gray;
+}
+
+.timeline{
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+.timeline::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 1px;
+    bottom: 1px;
+    width: 3px;
+
+    background-color: black;
+}
+
+.change{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2em;
+
+    border-bottom: dotted 1px rgb(200, 200, 200);
+
+    transition: ease 0.5s;
+}
+.change:hover{
+    border-bottom: solid 1px rgb(200, 200, 200);
+}
+
+.change-date{
+    width: 40%;
+    display: flex;
+    justify-content: right;
+    text-align: right;
+    color: gray;
+
+    cursor: default;
+
+    transition: ease 0.1s;
+}
+.change-date:hover{
+    font-weight: 600;
+}
+
+.change-description{
+    width: 40%;
+    display: flex;
+    justify-content: flex-start;
+    text-align: left;
+    font-weight: 600;
+
+    cursor: default;
+
+    transition: ease 0.1s;
+}
+.change-description:hover{
+    font-weight: 700;
+}
+
+.change-dot{
+    position: absolute;
+    left: 50%;
+    width: 16px;
+    height: 16px;
+    transform: translateX(-50%);
+    background-color: black;
+    border-radius: 50%;
+}
+
+.cta-button{
+    margin-top: 1em;
+    padding: 1em 2em;
+    border-radius: 12px;
+    background-color: rgb(46, 46, 46);
+    color: white;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+
+    transition: ease 0.1s;
+}
+.cta-button:hover{
+    letter-spacing: 0.02rem;
+}
+
+@media only screen and (max-width: 540px){
+    body{
+        padding: 1em;
+    }
+}
