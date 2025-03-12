@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    text-wrap: wrap;
+}
+
+html {
+    font-family: 'Outfit', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    align-items: center;
+    padding: 1em;
+    background-color: gray;
+}
+
+h1 {
+    color: white;
+    text-shadow: black 2px 2px;
+    border-bottom: solid white 3px;
+    border-radius: 12px;
+
+}
+
+header p {
+    font-weight: 600;
+}
+
+.subheading {
+    font-weight: 600px;
+    color: lightgray;
+}
+
+.container {
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    padding: 2em;
+    background-color: lightgray;
+    border-radius: 12px;
+    box-shadow: black 4px 4px 8px 1px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+#new-tag-container {
+    display: flex;
+    align-items: center;
+    gap: 0.6em;
+}
+
+.input {
+    border: none;
+    border-radius: 6px;
+    text-align: center;
+    box-shadow: black 1px 1px 4px 0.1px;
+}
+
+#new-task-tag {
+    padding: 0 1em;
+}
+
+.input:focus {
+    outline: none;
+}
+
+option {
+    text-align: center;
+}
+
+.btn {
+    border: none;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.one-char-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 16px;
+    height: 16px;
+    padding: 0.5em;
+    border-radius: 50%;
+    box-shadow: black 1px 1px 2px 1px;
+
+    transition: 0.1s ease box-shadow;
+}
+
+.one-char-btn:hover {
+    box-shadow: none;
+}
+
+#submit-btn {
+    width: 100%;
+    background-color: #242424;
+    color: white;
+    margin-top: 1em;
+    padding: 0.5em 2em;
+}
+
+#new-task-btn {
+    background-color: #6eff69;
+}
+
+#delete-task-btn {
+    background-color: #ff6969;
+}
+
+.task-list-container {
+    width: 100%;
+}
+
+.task-list {
+    margin-bottom: 1em;
+}
+
+.task-list-headings {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 50% 50%;
+    padding-bottom: 0.2em;
+    border-bottom: black 1px solid;
+}
+
+.list-item {
+    width: 100%;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 50% 50%;
+}
+
+.list-item:nth-child(even) {
+    background-color: #bfbfbf;
+}
+
+
+.subtitle {
+    font-weight: 600px;
+    color: gray;
+}
+
+
+@media (max-width: 900px) {
+    body {
+        padding: 0.5em;
+    }
+}

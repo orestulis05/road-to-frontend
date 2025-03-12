@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced To-do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Better To-do List</h1>
+        <p>Start organizing your life even better</p>
+    </header>
+    <div class="container">
+        <div class="add-task-container">
+            <h2>Add a New Task</h2>
+            <div class="form">
+                <div>
+                    <label for="new-task-name">Task Name:</label>
+                    <input placeholder="New Task Name" class="input" type="text" name="new-task-name"
+                        id="new-task-input">
+                </div>
+                <div id="new-tag-container">
+                    <label for="new-task-tag">Tag:</label>
+                    <select class="input" name="new-task-tag" id="new-task-tag">
+                        <option value="Personal">Personal</option>
+                    </select>
+                    <button class="btn one-char-btn" id="new-task-btn" onclick="createNewTag()">+</button>
+                    <button class="btn one-char-btn" id="delete-task-btn" onclick="deleteSelectedTag()">-</button>
+                </div>
+                <button class="btn" id="submit-btn">Submit</button>
+            </div>
+        </div>
+        <div class="task-list-container">
+            <h2>Task List</h2>
+            <div class="task-list-headings">
+                <h3>Task</h3>
+                <h3>Tag</h3>
+            </div>
+            <div class="task-list">
+                <p class="subtitle list-empty">*insert cricket noises here*</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="controls-container">
+            <h2>Controls</h2>
+            <div><b>Ctrl + LMB</b> to change task's name.</div>
+            <div><b>Ctrl + Shift + LMB</b> to delete a task.</div>
+        </div>
+        <p>(You have to press on a task)</p>
+    </div>
+    <p class="subheading">Made with pure HTML, CSS and Javascript</p>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
