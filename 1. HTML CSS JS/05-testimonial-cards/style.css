@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+html {
+    font-family: "Roboto", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em 4em;
+}
+
+p {
+    font-size: 0.9rem;
+}
+
+.card1 {
+    .text-cloud {
+        position: relative;
+        width: 300px;
+        color: white;
+        background-color: #141414;
+        padding: 1em;
+        border-radius: 12px;
+    }
+
+    .text-cloud::after {
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        left: 40px;
+        background-color: #141414;
+        z-index: 1;
+        transform: translateY(25%) rotate(45deg);
+    }
+
+    img {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 100%;
+        margin-top: 1.2em;
+    }
+
+    .person {
+        display: flex;
+        align-items: center;
+        gap: 0.5em;
+
+        .name {
+            font-weight: 700;
+        }
+
+        .role {
+            font-size: 0.7rem;
+        }
+    }
+}
+
+.card2 {
+    padding: 1em;
+    border: 2px solid black;
+    border-radius: 12px;
+
+
+    img {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 100%;
+        margin-top: 1.2em;
+    }
+
+    .person {
+        display: flex;
+        align-items: center;
+        gap: 0.5em;
+
+        .name {
+            font-weight: 700;
+        }
+
+        .role {
+            font-size: 0.7rem;
+        }
+    }
+}
+
+.card3 {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 33.33% 66.66%;
+    gap: 1em;
+    justify-content: center;
+
+    img {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 12px;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        color: white;
+        padding: 1em;
+        background-color: #141414;
+        border-radius: 12px;
+
+        .name {
+            font-size: 2rem;
+        }
+
+        .role {
+            color: gray;
+        }
+    }
+}
+
+.card4 {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 2em;
+    text-align: center;
+    border: solid 2px black;
+    border-radius: 12px;
+
+    .faces {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+        margin-bottom: 6px;
+    }
+
+    img {
+        position: relative;
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+    .unselected-person {
+        width: 70px;
+        height: 70px;
+        opacity: 0.5;
+    }
+
+    button {
+        border: none;
+        background: none;
+        font-weight: 700;
+        cursor: pointer;
+        padding: 1em;
+    }
+}
