@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400..700&display=swap');
+
+html {
+    font-family: 'Markazi Text', sans-serif;
+}
+
+body {
+    padding: 1em 2em;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+h2 span {
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.prevent-select {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+
+.progress-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+    background-color: lightgray;
+    border-radius: 12px;
+
+    progress {
+        width: 80%;
+        height: 50px;
+    }
+}
+
+.card-view {
+    width: 100%;
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 12px;
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+.qa-container {
+    margin: 1em;
+}
+
+.wrap {
+    padding: 4px;
+    border: solid 2px gray;
+    border-radius: 16px;
+    margin-top: 1em;
+}
+
+.navigation-container {
+    background-color: lightgray;
+    display: grid;
+    margin-top: 4px;
+    grid-template-columns: repeat(3, 1fr);
+    border-radius: 12px;
+    gap: 8px;
+
+    button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: none;
+        color: black;
+        padding: 1em;
+        border: none;
+        cursor: pointer;
+
+        font-size: 1.1rem;
+    }
+
+    #show-answer-btn {
+        font-weight: 700;
+    }
+
+    button:hover {
+        font-size: 1rem;
+    }
+}
